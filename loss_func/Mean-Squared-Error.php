@@ -3,7 +3,6 @@
 // Loss Function
 function mse($y, $y_pred)
 {
-
     $c = array_map(function ($a, $b) {
         return ($a - $b) ** 2;
     }, $y, $y_pred);

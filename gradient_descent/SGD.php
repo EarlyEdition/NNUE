@@ -1,15 +1,15 @@
 <?php
 
-  $xArr = array(1, 1, 2, 3, 5, 8, 13, 21, 34);
-  $yArr =  array(5, 5, 7, 9,13,19, 29, 45, 73);
+$xArr = array(1, 1, 2, 3, 5, 8, 13, 21, 34);
+$yArr =  array(5, 5, 7, 9,13,19, 29, 45, 73);
 
-  $count = count($xArr);
-  $learnc = 0.000001;
-  $weight = 0;
-  $bias = 1;
-  $cost;
+$count = count($xArr);
+$learnc = 0.000001;
+$weight = 0;
+$bias = 1;
+$cost;
 
- // Stochastic gradient descent
+/ Stochastic gradient descent
 do {
     $wx;
     $err = 0;
@@ -27,6 +27,6 @@ do {
     $cost = $err / $count;
 } while ($cost > 1);
 
-  echo "weight : $weight , ";
-  echo "bias : $bias , ";
-  echo "cost : $cost ";
+echo "weight : $weight , ";
+echo "bias : $bias , ";
+echo "cost : $cost ";

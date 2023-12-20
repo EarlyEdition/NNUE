@@ -9,7 +9,7 @@ $weight = 0;
 $bias = 1;
 $cost;
 
-/ Stochastic gradient descent
+// Stochastic gradient descent
 do {
     $wx;
     $err = 0;
